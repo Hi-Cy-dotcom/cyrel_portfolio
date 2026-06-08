@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyrel</title>
+  <meta name="description"
+    content="Cyrel Mendoza is a full-stack software engineer and AI specialist building modern web apps, intelligent systems, and developer communities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── HERO / HEADER ──────────────────────────────────────── -->
+  <div class="container site-header-wrap">
+    <header class="site-header">
+      <div class="header-inner">
+
+        <div class="profile-photo-wrap">
+          <img src="images/profile1.jpg" alt="Cyrel Mendoza" class="profile-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="profile-photo-placeholder">AR</div>
+        </div>
+
+        <div class="profile-info">
+          <div class="profile-name-row">
+            <h1 class="profile-name">Cyrel Mendoza</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme" role="switch" aria-checked="true">
+              <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+              </span>
+            </button>
+          </div>
+
+          <p class="profile-location">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Panabo City, Davao Del Norte, Philippines.
+          </p>
+
+          <p class="profile-title">Web Developer / Mobile Developer / Full-stack</p>
+
+          <div class="profile-actions">
+            <a href="#contact" class="btn btn-primary" id="scheduleBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              Schedule a Call
+            </a>
+            <a href="mailto:cyrelmendoza5@gmail.com" class="btn btn-secondary" id="emailBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,12 2,6" />
+              </svg>
+              Send Email
+            </a>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </header>
+  </div>
+
+  <!-- ── MAIN CONTENT ───────────────────────────────────────── -->
+  <main class="site-main">
+    <div class="container main-grid">
+
+      <!-- LEFT / CENTER COLUMN -->
+      <div class="main-left">
+
+        <!-- ABOUT -->
+        <section class="card" id="about">
+          <h2 class="section-title">About</h2>
+          <div class="about-text">
+            <p>I am a Junior Full Stack Developer specializing in JavaScript, PHP, and modern cloud platforms. I build robust web applications and mobile apps to deliver end-to-end solutions that enhance user engagement and operational efficiency.</p>
+            <p>My key soft skills include attention to detail, strong communication, problem-solving, critical thinking, and teamwork and collaboration. These strengths enable me to excel in dynamic environments and contribute effectively to team projects.</p>
+            
+          </div>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="card" id="tech-stack">
+          <div class="section-header">
+            <h2 class="section-title">Tech Stack</h2>
+          </div>
+
+          <div class="tech-group">
+            <h3 class="tech-group-label">Frontend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+
+          <div class="tech-group">
+            <h3 class="tech-group-label">Backend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="tech-group">
+            <h3 class="tech-group-label">Tools &amp; Cloud</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">VSCode</span>
+              <span class="tech-tag">GitHub Actions</span>
+              <span class="tech-tag">Hostinger</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- RECENT PROJECTS -->
+        <section class="card" id="projects">
+          <div class="section-header">
+            <h2 class="section-title">Recent Projects</h2>
+          </div>
+          <div class="projects-grid">
+
+            <article class="project-card" id="project-codecred">
+              <div class="project-icon">🏥</div>
+              <h3 class="project-name">Kalusug</h3>
+              <p class="project-desc">A Community Health Insights Information System with Trend-Driven Descriptive Analytics</p>
+              <a href="#" class="project-url">Virtual Private System</a>
+            </article>
+
+            <article class="project-card" id="project-base404">
+              <div class="project-icon">📅</div>
+              <h3 class="project-name">DNSC-SDSD Conference Room Reservation System</h3>
+              <p class="project-desc">Room Reservation System</p>
+              <a href="https://dnsc.edu.ph/sdsd-php/" class="project-url">https://dnsc.edu.ph/sdsd-php/</a>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="card" id="certifications">
+          <div class="section-header">
+            <h2 class="section-title">Recent Certifications</h2>
+          </div>
+          <div class="cert-list">
+            <div class="cert-item cert-clickable" id="cert-Cisco" data-cert-img="images/cisco.png" data-cert-title="Getting Started with Cisco Packet Tracer">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">Getting Started with Cisco Packet Tracer</div>
+                <div class="cert-issuer">Networking Academy</div>
+              </div>
+              <span class="cert-view-hint">View</span>
+            </div>
+            <div class="cert-item cert-clickable" id="cert-level-app" data-cert-img="images/proto.png" data-cert-title="3rd Place Prototype – Level App 2.0 2025">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">3rd Place Prototype - Level App 2.0 2025</div>
+                <div class="cert-issuer">Davao Del Norte State College</div>
+              </div>
+              <span class="cert-view-hint">View</span>
+            </div>
+            <div class="cert-item cert-clickable" id="cert-ASS1" data-cert-img="images/ass1.png" data-cert-title="Advance Seminar Series – Journey from Science to IT Specialist">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">Advance Seminar Series - "Journey from Science Practitioner to Information Technology Specialist"</div>
+                <div class="cert-issuer">Davao Del Norte State College</div>
+              </div>
+              <span class="cert-view-hint">View</span>
+            </div>
+          </div>
+          <div class="cert-item cert-clickable" id="cert-ASS" data-cert-img="images/ass2.png" data-cert-title="Advance Seminar Series – The Power of Color in Graphic Design">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">Advance Seminar Series - "The Power of Color in Graphic Design: Theory, Psychology, and Practice"</div>
+                <div class="cert-issuer">Davao Del Norte State College</div>
+              </div>
+              <span class="cert-view-hint">View</span>
+            </div>
+            <div class="cert-item cert-clickable" id="cert-trilogi" data-cert-img="images/trilogi.jpg" cert-title="trilogi">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">international Course Session - "User Experience Questionnaire Instruments"</div>
+                <div class="cert-issuer">Universitas Trilogi</div>
+              </div>
+              <span class="cert-view-hint">View</span>
+            </div>
+            <div class="cert-item cert-clickable" id="cert-capstone" data-cert-img="images/capstone.jpg" cert-title="capstone">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">Capstone Deployment Completion </div>
+                <div class="cert-issuer">Barangay San Francisco, Health Care Center, Panabo City</div>
+              </div>
+              <span class="cert-view-hint">View</span>
+            </div>
+        </section>
+
+        <!-- MEMBERSHIPS + SOCIAL + SPEAKING -->
+        <section class="card" id="contact">
+          <div class="bottom-grid">
+
+            <div class="bottom-col" id="social-links">
+              <h3 class="bottom-col-title">Social Links</h3>
+              <ul class="social-list">
+                <li>
+                  <a href="https://www.linkedin.com/in/mendoza-cyrel-001104258" class="social-link" id="linkedinLink">
+                    <span class="social-icon social-linkedin">in</span> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Hi-Cy-dotcom/Cyrel-portfolio" class="social-link" id="githubLink">
+                    <span class="social-icon social-github">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                      </svg>
+                    </span> GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bottom-col" id="contact-info">
+              <h3 class="bottom-col-title">Contact</h3>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,12 2,6" />
+                  </svg>
+                  <span>cyrelmendoza5@gmail.com</span>
+                </li>
+                <li class="contact-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 
+                            2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 
+                            16 0 0 0 6 6l1.49-1.2a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>+639514073321</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="card" id="gallery">
+          <h2 class="section-title">Gallery</h2>
+          <div class="gallery-wrap">
+            <button class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Previous">&#8249;</button>
+            <div class="gallery-track" id="galleryTrack">
+              <div class="gallery-item placeholder-img">
+                <div class="placeholder-label">Photo 1</div>
+              </div>
+              <div class="gallery-item placeholder-img">
+                <div class="placeholder-label">Photo 2</div>
+              </div>
+              <div class="gallery-item placeholder-img">
+                <div class="placeholder-label">Photo 3</div>
+              </div>
+              <div class="gallery-item placeholder-img">
+                <div class="placeholder-label">Photo 4</div>
+              </div>
+              <div class="gallery-item placeholder-img">
+                <div class="placeholder-label">Photo 5</div>
+              </div>
+            </div>
+            <button class="gallery-nav gallery-next" id="galleryNext" aria-label="Next">&#8250;</button>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="main-right">
+
+        <!-- EXPERIENCE -->
+        <section class="card" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <ol class="timeline">
+
+            <li class="timeline-item" id="exp-bsit">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">BS Information Technology</div>
+                <div class="timeline-company">Davao Del Norte State College</div>
+                <div class="timeline-year">2026</div>
+              </div>
+            </li>
+
+            <li class="timeline-item" id="exp-bsit">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Intern at Student Development and Services Division - Davao Del Norte State Collge</div>
+                <div class="timeline-company">Programmer</div>
+                <div class="timeline-year">2026</div>
+              </div>
+            </li>
+
+             <li class="timeline-item" id="exp-bsit">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Capstone - Brgy. San Fransisco Health Care Center</div>
+                <div class="timeline-company">Project Manager</div>
+                <div class="timeline-year">2025-2026</div>
+              </div>
+            </li>
+
+            <li class="timeline-item" id="exp-hello">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Hello World! 👋</div>
+                <div class="timeline-company">Wrote my first line of code</div>
+                <div class="timeline-year">2022</div>
+              </div>
+            </li>
+
+          </ol>
+        </section>
+
+        <!-- RECOMMENDATIONS 
+        <section class="card" id="recommendations">
+          <h2 class="section-title">Recommendations</h2>
+
+          <div class="rec-slider" id="recSlider">
+            <div class="rec-slide active" id="rec-1">
+              <blockquote class="rec-quote">"Alex's teaching approach is incredibly hands-on, and the projects
+                significantly accelerated my learning process in web development. I am truly grateful for the mentorship
+                I received from him during my web development internship."</blockquote>
+              <div class="rec-author">
+                <div class="rec-avatar">JS</div>
+                <div>
+                  <div class="rec-name">Jamie Santos</div>
+                  <div class="rec-title">Professor at State University</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rec-slide" id="rec-2">
+              <blockquote class="rec-quote">"Working with Alex was a game-changer for our startup. He delivered a
+                scalable solution in record time and guided our team through modern AI integrations with clarity and
+                patience."</blockquote>
+              <div class="rec-author">
+                <div class="rec-avatar">MC</div>
+                <div>
+                  <div class="rec-name">Maria Chen</div>
+                  <div class="rec-title">CTO at NexaLabs</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rec-slide" id="rec-3">
+              <blockquote class="rec-quote">"Alex is the kind of engineer who doesn't just write code — he thinks in
+                systems. His ability to bridge business goals and technical implementation is rare and invaluable."
+              </blockquote>
+              <div class="rec-author">
+                <div class="rec-avatar">DP</div>
+                <div>
+                  <div class="rec-name">Daniel Park</div>
+                  <div class="rec-title">VP Engineering at CloudShift</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rec-dots" id="recDots">
+            <button class="rec-dot active" data-index="0" aria-label="Testimonial 1"></button>
+            <button class="rec-dot" data-index="1" aria-label="Testimonial 2"></button>
+            <button class="rec-dot" data-index="2" aria-label="Testimonial 3"></button>
+          </div>
+        </section>
+        -->
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>© 2026 CyreL Mendoza. All rights reserved.</p>
+  </footer>
+
+  <!-- FLOATING CHAT BUTTON -->
+  <div class="chat-fab" id="chatFab" role="button" tabindex="0" aria-label="Chat with Cyrel">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+    </svg>
+    <span>Chat with Cyrel</span>
+  </div>
+
+  <!-- ── CERTIFICATE MODAL ──────────────────────────────────── -->
+  <div class="cert-modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="cert-modal">
+      <div class="cert-modal-header">
+        <span class="cert-modal-title" id="certModalTitle"></span>
+        <button class="cert-modal-close" id="certModalClose" aria-label="Close certificate">&times;</button>
+      </div>
+      <div class="cert-modal-body">
+        <img class="cert-modal-img" id="certModalImg" src="" alt="Certificate" />
+        <div class="cert-modal-placeholder" id="certModalPlaceholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3">
+            <circle cx="12" cy="8" r="4"/><rect x="3" y="14" width="18" height="7" rx="2"/>
+            <path d="M9 21v-3a3 3 0 016 0v3"/>
+          </svg>
+          <p>No image found.<br/>Add the certificate image to your <code>images/</code> folder.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
