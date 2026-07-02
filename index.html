@@ -86,9 +86,7 @@
         <section class="card" id="about">
           <h2 class="section-title">About</h2>
           <div class="about-text">
-            <p>I am a Junior Full Stack Developer specializing in JavaScript, PHP, and modern cloud platforms. I build robust web applications and mobile apps to deliver end-to-end solutions that enhance user engagement and operational efficiency.</p>
-            <p>My key soft skills include attention to detail, strong communication, problem-solving, critical thinking, and teamwork and collaboration. These strengths enable me to excel in dynamic environments and contribute effectively to team projects.</p>
-            
+            <p>Motivated and detail-oriented BSIT graduate with hands-on experience in full-stack web and mobile application development. Skilled in React, React Native, Laravel, PHP, JavaScript, HTML, CSS, and database management, with a passion for building practical and user-centered solutions. Eager to contribute technical expertise, adaptability, and a strong commitment to continuous learning in a professional environment.</p>
           </div>
         </section>
 
@@ -137,18 +135,24 @@
           </div>
           <div class="projects-grid">
 
-            <article class="project-card" id="project-codecred">
+            <article class="project-card project-has-video" id="project-codecred" data-video-src="videos/kalusug.mp4" data-video-title="Kalusug — Screen Recording Demo">
               <div class="project-icon">🏥</div>
               <h3 class="project-name">Kalusug</h3>
               <p class="project-desc">A Community Health Insights Information System with Trend-Driven Descriptive Analytics</p>
-              <a href="#" class="project-url">Virtual Private System</a>
+              <button type="button" class="project-url project-video-trigger">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch Demo
+              </button>
             </article>
 
-            <article class="project-card" id="project-base404">
+            <article class="project-card project-has-video" id="project-codecred" data-video-src="videos/reservation.mp4" data-video-title="SDSD Conference Reservation Room — Screen Recording Demo">
               <div class="project-icon">📅</div>
               <h3 class="project-name">DNSC-SDSD Conference Room Reservation System</h3>
               <p class="project-desc">Room Reservation System</p>
-              <a href="https://dnsc.edu.ph/sdsd-php/" class="project-url">https://dnsc.edu.ph/sdsd-php/</a>
+              <button type="button" class="project-url project-video-trigger">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch Demo
+              </button>
             </article>
 
           </div>
@@ -419,6 +423,27 @@
             <path d="M9 21v-3a3 3 0 016 0v3"/>
           </svg>
           <p>No image found.<br/>Add the certificate image to your <code>images/</code> folder.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PROJECT VIDEO MODAL ───────────────────────────────── -->
+  <div class="cert-modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <div class="cert-modal video-modal">
+      <div class="cert-modal-header">
+        <span class="cert-modal-title" id="videoModalTitle"></span>
+        <button class="cert-modal-close" id="videoModalClose" aria-label="Close video">&times;</button>
+      </div>
+      <div class="cert-modal-body video-modal-body">
+        <video class="video-modal-player" id="videoModalPlayer" controls playsinline preload="metadata">
+          Your browser does not support the video tag.
+        </video>
+        <div class="cert-modal-placeholder" id="videoModalPlaceholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3">
+            <circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z"/>
+          </svg>
+          <p>No video found.<br/>Add the screen recording to your <code>videos/</code> folder.</p>
         </div>
       </div>
     </div>

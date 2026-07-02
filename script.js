@@ -215,4 +215,57 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && certModal?.classList.contains('open')) closeCertModal();
   });
 
+  /* ── PROJECT VIDEO MODAL ──────────────────────────────────── */
+  const videoModal            = document.getElementById('videoModal');
+  const videoModalPlayer      = document.getElementById('videoModalPlayer');
+  const videoModalTitle       = document.getElementById('videoModalTitle');
+  const videoModalClose       = document.getElementById('videoModalClose');
+  const videoModalPlaceholder = document.getElementById('videoModalPlaceholder');
+
+  function openVideoModal(videoSrc, title) {
+    videoModalTitle.textContent = title;
+    videoModalPlayer.classList.remove('loaded');
+    videoModalPlaceholder.style.display = 'none';
+
+    videoModalPlayer.onloadeddata = () => {
+      videoModalPlayer.classList.add('loaded');
+      videoModalPlaceholder.style.display = 'none';
+    };
+    videoModalPlayer.onerror = () => {
+      videoModalPlayer.classList.remove('loaded');
+      videoModalPlaceholder.style.display = 'flex';
+    };
+
+    videoModalPlayer.src = videoSrc;
+    videoModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeVideoModal() {
+    videoModal.classList.remove('open');
+    document.body.style.overflow = '';
+    videoModalPlayer.pause();
+    setTimeout(() => { videoModalPlayer.removeAttribute('src'); videoModalPlayer.load(); }, 300);
+  }
+
+  document.querySelectorAll('.project-has-video').forEach(card => {
+    const trigger = card.querySelector('.project-video-trigger') || card;
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const video = card.dataset.videoSrc;
+      const title = card.dataset.videoTitle || card.querySelector('.project-name')?.textContent || 'Project Demo';
+      openVideoModal(video, title);
+    });
+  });
+
+  if (videoModalClose) videoModalClose.addEventListener('click', closeVideoModal);
+
+  videoModal?.addEventListener('click', e => {
+    if (e.target === videoModal) closeVideoModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && videoModal?.classList.contains('open')) closeVideoModal();
+  });
+
 });

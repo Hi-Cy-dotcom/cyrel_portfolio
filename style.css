@@ -700,6 +700,33 @@ img {
   background: rgba(99, 102, 241, 0.2);
 }
 
+.project-video-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.project-video-trigger svg {
+  flex-shrink: 0;
+}
+
+.project-has-video {
+  position: relative;
+}
+
+.project-has-video::after {
+  content: '▶';
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 10px;
+  color: var(--accent);
+  opacity: 0.6;
+}
+
 /* ── CERTIFICATIONS ────────────────────────────────────────── */
 .cert-list {
   display: flex;
@@ -1310,6 +1337,29 @@ img {
   padding: 1px 6px;
   border-radius: 4px;
   color: var(--accent);
+}
+
+/* ── PROJECT VIDEO MODAL ──────────────────────────────────── */
+.video-modal {
+  max-width: 820px;
+}
+
+.video-modal-body {
+  padding: 16px;
+  min-height: 240px;
+}
+
+.video-modal-player {
+  width: 100%;
+  max-height: 65vh;
+  border-radius: var(--radius-sm);
+  display: none;
+  background: #000;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.video-modal-player.loaded {
+  display: block;
 }
 
 /* ── RESPONSIVE ────────────────────────────────────────────── */
